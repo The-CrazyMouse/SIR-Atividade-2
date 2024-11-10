@@ -1,0 +1,138 @@
+/* Variáveis Globais de Estilo */
+:root {
+    --primary-color: #f2a900;
+    --secondary-color: #8c6200;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #D3D3D3;
+}
+
+.header {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background-color: var(--primary-color);
+  padding: 10px 0;
+}
+
+.nav-item {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+  background-color: var(--secondary-color);
+}
+
+.table-section {
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+table {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto; /* Adiciona margem automática para centralizar */
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Fundo branco para a tabela */
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--primary-color); /* Primary color for table headers */
+    color: #fff;
+}
+
+td[contenteditable="true"] {
+    background-color: #f9f9ff; /* Light background for editable cells */
+    outline: none;
+    cursor: text;
+}
+
+tr:hover td[contenteditable="true"] {
+    background-color: #e3f2fd; /* Light blue hover effect on editable cells */
+}
+
+button {
+    padding: 10px 18px;
+    margin: 6px;
+    font-size: 1em;
+    color: #fff;
+    background-color: var(--primary-color); /* Primary color for buttons */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--secondary-color); /* Darker background on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.new-item-form {
+    display: flex;
+    gap: 10px;
+    margin: 20px auto; /* Centraliza o formulário na página */
+    justify-content: center; /* Centraliza os elementos numa linha */
+    max-width: 100%; /* Garante que o formulário não ultrapasse a área visível */
+}
+
+.new-item-form input {
+    padding: 10px;
+    font-size: 0.9em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    width: 200px; /* Define largura consistente para os inputs */
+}
+
+.new-item-form input:focus {
+    border-color: var(--primary-color); /* Highlight input border on focus */
+}
+
+.new-item-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.new-item-form button:hover {
+    background-color: var(--secondary-color); /* Corrigido nome da variável */
+}
+
+/* Ajustes para corrigir erro na tabela */
+th:last-child {
+    width: 50px; /* Define largura para a última coluna */
+}

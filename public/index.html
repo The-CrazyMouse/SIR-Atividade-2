@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Editable List</title>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+
+		<header class="header">
+			<h1>Estudantes Da ESTG</h1>
+		</header>
+
+		<nav class="navbar">
+			<a href="/about" class="nav-item">Sobre</a>
+			<a href="/doc" class="nav-item">Documentação</a>
+		</nav>
+
+		<table id="itemsTable">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Nome</th>
+					<th>Idade</th>
+					<th>Curso</th>
+					<th>Ano</th>
+					<th><th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Items will be inserted here -->
+			</tbody>
+		</table>
+
+		<div class="new-item-form">
+			<input type="text" id="newName" placeholder="Nome do Estudante" />
+			<input type="number" id="newAge" placeholder="Idade do Estudante" />
+			<input type="text" id="newCourse" placeholder="Curso do Estudante" />
+			<input type="number" id="newYear" placeholder="Ano do Estudante" />
+			<button onclick="createNewItem()">Create</button>
+		</div>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>

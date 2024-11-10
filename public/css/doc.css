@@ -1,0 +1,106 @@
+/* Variáveis Globais de Estilo */
+:root {
+    --primary-color: #f2a900;
+    --secondary-color: #8c6200;
+    --background-color: #ffffff;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D3D3D3;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8em;
+    border-radius: 8px 8px 0 0;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: var(--primary-color);
+    padding: 10px 0;
+    border-radius: 0 0 8px 8px;
+}
+
+.nav-item {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: var(--secondary-color);
+}
+
+.intro {
+    margin: 20px 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.api-routes h3 {
+    color: var(--primary-color);
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.routes-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.routes-list li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border-left: 5px solid var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.routes-list li:hover {
+    transform: scale(1.02);
+}
+
+.routes-list li strong {
+    color: var(--primary-color);
+    font-size: 1.1em;
+}
+
+.info {
+    font-size: 1em;
+    color: #666;
+    margin-top: 15px;
+}

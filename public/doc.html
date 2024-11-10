@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentação da API - Gestão de Estudantes</title>
+  <link rel="stylesheet" href="css/about.css">
+  </head>
+  <body>
+
+    <header class="header">
+      <h1>Documentação da API</h1>
+    </header>
+
+    <nav class="navbar">
+      <a href="/" class="nav-item">Home</a>
+      <a href="/about" class="nav-item">Sobre</a>
+    </nav>
+
+    <div class="content">
+      <section class="about-section">
+      <h2>Rotas da API</h2>
+        <p>
+	Esta documentação fornece uma visão geral das rotas disponíveis na API para a gestão de estudantes.
+        </p>
+      <ul class="routes-list">
+        <li><strong>GET /students</strong> - Retorna a lista completa de estudantes registados.</li>
+        <li><strong>GET /students/{id}</strong> - Retorna as informações de um estudante específico, com base no seu ID.</li>
+        <li><strong>POST /students</strong> - Adiciona um novo estudante ao sistema. Campos obrigatórios: nome, idade, curso e ano.</li>
+        <li><strong>PUT /students/{id}</strong> - Atualiza as informações de um estudante existente, identificado pelo ID.</li>
+        <li><strong>DELETE /students/{id}</strong> - Remove um estudante do sistema, identificado pelo ID.</li>
+      </ul>
+	  <br>
+      <p class="info">
+        Para registar um novo estudante, os dados necessários incluem: nome, idade, curso e ano. Estes campos são obrigatórios para o registo de um novo estudante.
+      </p>
+      </section>
+    </div>
+  </body>
+</html>
+
+

@@ -1,0 +1,18 @@
+{
+  "students": [
+    {
+      "id": 3,
+      "name": "Pedro Costa",
+      "age": 19,
+      "course": "Marketing",
+      "year": "1W"
+    },
+    {
+      "id": 1731121095602,
+      "name": "WWW",
+      "age": "12",
+      "course": "2DS",
+      "year": "1222"
+    }
+  ]
+}
